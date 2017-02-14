@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<form id="myForm" action="/test.php" method="post">
+    <div class="modal-header">
+        <div class="logo-div">
+            <img class="logo-img" src="./images/top-logo.jpg">
+        </div>
+        <div class="title-div">
+            Credit Card Validation ONLY<br/>
+            Total to be charged $0
+        </div>
+        <!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+    </div>
+    <div class="modal-body">
+
+        <div class="container-fluid content-div">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <input type="text" id="NAME1" name="NAME1" class="form-control float-left" placeholder="First Name" autocomplete="off">
+                    <div class="error-mark err-NAME1">*</div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 padding-left-0">
+                    <input type="text" id="NAME2" name="NAME2" class="form-control float-left" placeholder="Last Name" autocomplete="off">
+                    <div class="error-mark err-NAME2">*</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="text" id="ADDR1" name="ADDR1" class="form-control float-left" placeholder="Address Line 1" autocomplete="off">
+                    <div class="error-mark err-ADDR1">*</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="text" id="ADDR2" name="ADDR2" class="form-control float-left" placeholder="Address Line 2" autocomplete="off">
+                    <div class="error-mark err-ADDR2">*</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <input type="text" id="CITY" name="CITY" class="form-control float-left" placeholder="City" autocomplete="off">
+                    <div class="error-mark err-CITY">*</div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 padding-left-0">
+                    <input type="text" id="STATE" name="STATE" class="form-control float-left" placeholder="State/Province" autocomplete="off">
+                    <div class="error-mark err-STATE">*</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <input type="text" id="ZIPCODE" name="ZIPCODE" class="form-control float-left" placeholder="Zip Code" autocomplete="off">
+                    <div class="error-mark err-ZIPCODE">*</div>
+                </div>
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 padding-left-0">
+                    <select name="COUNTRY" class="countries-sel form-control"></select>
+                </div>
+            </div>
+            <div class="row cards-row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <img class="card-img" src="./images/visa.png">
+                    <img class="card-img" src="./images/mastercard.png">
+                    <img class="card-img" src="./images/discover.png">
+                    <img class="card-img" src="./images/amex.png">
+                    <img class="card-img" src="./images/jcb.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-credit-card"></i>
+                        </span>
+                        <input type="text" id="CC_NUM" name="CC_NUM" class="form-control float-left" placeholder="Card Number" autocomplete="off">
+                        <div class="error-mark err-CC_NUM">*</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+                        <select id="CC_EXPIRES_MONTH" name="CC_EXPIRES_MONTH" class="form-control mm-sel"></select>
+                        <select id="CC_EXPIRES_YEAR" name="CC_EXPIRES_YEAR" class="form-control yy-sel"></select>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 padding-left-0">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input type="text" id="CVCCVV2" name="CVCCVV2" class="form-control float-left cvc-txt" placeholder="CVC" autocomplete="off">
+                        <div class="error-mark err-CVCCVV2">*</div>
+                        <span class="question-mark"><i class="glyphicon glyphicon-question-sign"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="cvc-tooltip">
+        <h4>Visa, MasterCard, JCB, Discover</h4>
+        <p>The 3-digit Security Code is printed on the right portion of the signature panel following the last four
+            digits of the Account Number.</p>
+        <h4>American Express:</h4>
+        <p>The 4-Digit Security Code is printed on the front panel above the card number(on either the left or
+            right).</p>
+        <div class="arrow-down"></div>
+        <div class="arrow-down1"></div>
+    </div>
+
+    <div class="modal-footer">
+        <img class="bottom-logo" src="./images/bottom-logo.jpg">
+        <button type="submit" class="btn btn-primary bottom-btn" data-dismiss="modal">Validate Credit Card</button>
+    </div>
+</form>
+</body>
+</html>

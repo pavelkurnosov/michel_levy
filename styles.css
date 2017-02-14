@@ -1,0 +1,232 @@
+.btn-rect {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.padding-left-0 {
+    padding-left: 0;
+}
+
+#myModal {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-dialog {
+    width: 398px;
+    height: 540px;
+    margin-top: 50px;
+}
+
+.modal-content {
+    height: 100%;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.logo-div {
+    float: left;
+    color: white;
+    text-align: center;
+}
+
+.title-div {
+    float: left;
+    padding-left: 50px;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+.content-div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.content-div .row {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.card-img {
+    width: 40px;
+}
+
+.mm-sel {
+    width: 50px !important;
+    padding-right: 0;
+    padding-left: 5px;
+}
+
+.yy-sel {
+    width: 70px !important;
+    padding-right: 0;
+    padding-left: 5px;
+}
+
+.green-square {
+    position: absolute;
+    border: 1px solid #02c302;
+    z-index: 10000;
+    top: 20px;
+    left: 20px;
+    color: #02c302;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-footer {
+    padding: 5px;
+}
+
+.bottom-logo {
+    float: left;
+    margin-left: 10px;
+}
+
+.bottom-btn {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.close-button {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.cards-row {
+    margin-top: 20px;
+}
+
+.cvc-txt {
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+}
+
+.cvc-txt:after {
+    content: "*";
+    margin: 0 0 0 0.1em;
+    color: #f00;
+}
+
+.question-mark {
+    margin-left: -20px;
+    position: relative;
+    z-index: 20000;
+}
+
+.question-mark i {
+    font-size: 14px;
+    margin-top: 8px;
+    color: lightgrey;
+}
+
+.question-mark i:hover {
+    color: grey;
+    cursor: help;
+}
+
+.cvc-tooltip {
+    position: absolute;
+    background: white;
+    width: 300px;
+    top: 208px;
+    left: 90px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    z-index: 1000;
+    padding: 0px 10px;
+    display: none;
+}
+
+.cvc-tooltip h4 {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid lightgrey;
+    position: absolute;
+    left: 267px;
+    z-index: 1000;
+}
+
+.arrow-down1 {
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 8px solid white;
+    position: absolute;
+    left: 268px;
+    z-index: 1000;
+}
+
+.form-error {
+    border: 1px solid red;
+}
+
+.error-mark {
+    float: left;
+    color: red;
+    margin-left: -15px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1000;
+    display: none;
+}
+
+.err-NAME1 {
+    margin-left: -80px;
+}
+
+.err-NAME2 {
+    margin-left: -96px;
+}
+
+.err-ADDR1 {
+    margin-left: -255px;
+}
+
+.err-ADDR2 {
+    margin-left: -255px;
+}
+
+.err-CITY {
+    margin-left: -127px;
+}
+
+.err-ZIPCODE {
+    margin-left: -27px;
+}
+
+.err-STATE {
+    margin-left: -75px;
+}
+
+.err-CC_NUM {
+    margin-left: -225px;
+}
+
+.err-CVCCVV2 {
+    margin-left: -98px;
+}
